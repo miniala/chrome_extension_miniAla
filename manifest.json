@@ -1,0 +1,20 @@
+{
+  "name": "miniAla",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description" : "html & css develope tool~",
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "devtools_page": "devtools/devtools.html"
+}
