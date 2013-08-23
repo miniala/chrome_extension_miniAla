@@ -1,0 +1,43 @@
+<script type="text/javascript" src="jquery_2.0.3.js"></script>
+<script type="text/javascript" src="devtoolscontent.js"></script>
+<style>
+*{margin:0; padding:0;}
+body textarea{font-family:'Arial', 'Tahoma', 'sans-serif'}
+ul li{list-style:none; background:#f00; padding: 0;}
+#html-wrap, #style-wrap{float:left; width:50%; height:100%; overflow:auto;}
+/*#html-wrap{background:#f5f5f5; border-right:1px solid #ccc; margin-left:-1px;}*/
+#html-wrap{position:relative;border-right:1px solid #ccc; margin-left:-1px;}
+#htmlarea{width:100%; height:99%;}
+#submithtml{width:100%; height:30px; position:absolute; bottom:0; background:#ccc; border:none; cursor:pointer;}
+#submithtml:hover{background:#cfcfcf}
+#style-wrap{position:relative;}
+#stylearea{width:100%; height:99%;}
+#submitstyle{width:100%; height:30px; position:absolute; bottom:0; background:#ccc; border:none; cursor:pointer;}
+#submitstyle:hover{background:#cfcfcf}
+</style>
+<!-- 节点容器 -->
+<div id="html-wrap">
+	<form id="html-form" name="html-form">
+		<ul>
+			<li>
+				<textarea id="htmlarea"></textarea>
+			</li>
+			<li>
+				<button id="submithtml" type="submit">submithtml</button>
+			</li>
+		</ul>
+	</form>
+</div>
+<!-- 样式容器 -->
+<div id="style-wrap">
+	<form id="style-form" name="style-form">
+		<ul>
+			<li>
+				<textarea id="stylearea"></textarea>
+			</li>
+			<li>
+				<button id="submitstyle" type="submit">submitstyle</button>
+			</li>
+		</ul>
+	</form>
+</div>
