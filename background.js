@@ -43,7 +43,6 @@ var style = function(messageStyle) {
 	});
 }
 // 给 content script 发送信息
-// send a message to the content script
 var html = function(messageHtml) {
 	chrome.tabs.getSelected(null, function(tab){
 	    chrome.tabs.sendMessage(tab.id, {type: "html-page", html: messageHtml});
